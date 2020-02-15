@@ -1,0 +1,6 @@
+{{#let (get-code-snippet "old-component.js" ) as |snippet|}}
+  <CodeBlock @language={{snippet.language}}>
+    {{snippet.source}}
+  </CodeBlock>
+{{/let}}
+{{outlet}}
