@@ -7,5 +7,7 @@ export default class Router extends EmberRouter {
 }
 
 Router.map(function() {
-  this.route('angle-bracket-syntax');
+  this.route('angle-bracket-syntax', function() {
+    this.route('nested');
+  });
 });

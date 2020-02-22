@@ -1,40 +1,12 @@
+
+  <ul class="flex border-b">
+  <li class="-mb-px mr-1">
+    {{!-- <a class="bg-white inline-block border-l border-t border-r rounded-t py-2 px-4 text-blue-700 font-semibold" href="#">Angel Brackets</a> --}}
+        <LinkTo @route="angle-bracket-syntax.index" class="bg-white inline-block border-l border-t border-r rounded-t py-2 px-4 text-blue-700 font-semibold" >Angel Brackets</LinkTo>
+  </li>
+  <li class="mr-1">
+    {{!-- <a class="bg-white inline-block py-2 px-4 text-blue-500 hover:text-blue-800 font-semibold" href="#">Nested</a> --}}
+    <LinkTo @route="angle-bracket-syntax.nested" class="bg-white inline-block py-2 px-4 text-blue-500 hover:text-blue-800 font-semibold" >Nested</LinkTo>
+  </li>
+</ul>
 {{outlet}}
-<div class="flex flex-wrap -mx-1 overflow-hidden">
-
-
-  <div class="my-1 px-1 w-1/2 overflow-hidden">
-  <h1>Old Component {{model.flickerImage }}</h1>
-         {{old-component
-          image=model.image
-          title="Can beer make you a better developer?"
-          class="max-w-sm w-full lg:max-w-full lg:flex"
-      }}
-  </div>
-
-  <div class="my-1 px-1 w-1/2 overflow-hidden">
-  <h1>New Component</h1>
-    <NewComponent        
-        @image={{ this.model.image }}
-        @title="Can beer make you a better developer?"
-        class="max-w-sm w-full lg:max-w-full lg:flex"
-        />
-  </div>
-
-    <div class="my-1 px-1 w-1/2 overflow-hidden">
-      {{#let (get-code-snippet "old-component.js" unindent = true) as |snippet|}}
-      <CodeBlock @language={{snippet.language}}>
-        {{snippet.source}}
-      </CodeBlock>
-    {{/let}}
-  </div>
-
-  <div class="my-1 px-1 w-1/2 overflow-hidden">
-      {{#let (get-code-snippet "new-component.js" unindent = true) as |snippet|}}
-      <CodeBlock @language={{snippet.language}}>
-        {{snippet.source}}
-      </CodeBlock>
-    {{/let}}
-  </div>
-
-
-</div>

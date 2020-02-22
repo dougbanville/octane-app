@@ -9,7 +9,7 @@ export default Factory.extend({
   price(){
     return faker.commerce.price();
   },
-  image(){
-    return `https://loremflickr.com/320/240/beer`
+  image(i){
+    return `https://loremflickr.com/g/320/240/beer?random=${i}`
   }
 });
