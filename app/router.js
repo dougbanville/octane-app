@@ -7,7 +7,8 @@ export default class Router extends EmberRouter {
 }
 
 Router.map(function() {
-  this.route('angle-bracket-syntax', function() {
+  this.route('glimmer-components', function() {
     this.route('nested');
   });
+  this.route('es6classes');
 });

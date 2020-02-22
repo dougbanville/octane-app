@@ -1,11 +1,11 @@
 import { module, test } from 'qunit';
 import { setupTest } from 'ember-qunit';
 
-module('Unit | Route | angle-bracket-syntax', function(hooks) {
+module('Unit | Route | glimmer-components', function(hooks) {
   setupTest(hooks);
 
   test('it exists', function(assert) {
-    let route = this.owner.lookup('route:angle-bracket-syntax');
+    let route = this.owner.lookup('route:glimmer-components');
     assert.ok(route);
   });
 });
