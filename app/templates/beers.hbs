@@ -1,0 +1,6 @@
+<BeerContainer as |beers|>
+  {{outlet}}
+{{#each beers as |beer|}}
+  <Beer @beer={{beer}} />
+{{/each}}
+</BeerContainer>

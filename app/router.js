@@ -11,4 +11,9 @@ Router.map(function() {
     this.route('nested');
   });
   this.route('es6classes');
+  this.route('beers', function() {
+    this.route('beer',{
+      path: '/:id'
+    });
+  });
 });

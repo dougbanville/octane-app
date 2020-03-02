@@ -24,5 +24,6 @@ export default function() {
     https://www.ember-cli-mirage.com/docs/route-handlers/shorthands
   */
  this.get('/beers');
- this.get('/beers/:id')
+ this.get('/beers/:id');
+ this.passthrough('https://api.punkapi.com/v2/**');
 }
