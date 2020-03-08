@@ -16,4 +16,5 @@ Router.map(function() {
       path: '/:id'
     });
   });
+  this.route('modifier');
 });

@@ -1,10 +1,1 @@
-<div class="flex flex-wrap -mx-1 overflow-hidden" style="height:400px;">
-  <div class="my-1 px-1 w-1/2 overflow-hidden">
-    <img src="{{this.model.image_url}}" alt="">
-  </div>
-  <div class="my-1 px-1 w-1/2 overflow-hidden">
-    <h1>{{this.model.id}}</h1>
-    {{this.model.description}}
-  </div>
-</div>
-<hr>
+<BeerDetail @model={{this.model}} />

@@ -1,4 +1,3 @@
-//modifier
 import { setModifierManager } from "@ember/modifier";
 
 export default setModifierManager(

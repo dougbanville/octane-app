@@ -1,6 +1,6 @@
+{{outlet}}
 <BeerContainer as |beers|>
-  {{outlet}}
-{{#each beers as |beer|}}
-  <Beer @beer={{beer}} />
-{{/each}}
+  {{#each beers as |beer|}}
+    <Beer @beer={{beer}} class="max-w-sm w-full lg:flex"/>
+  {{/each}}
 </BeerContainer>

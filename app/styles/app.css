@@ -41,3 +41,8 @@ h2{
   font-size: 18px;
   font-weight:bold;
 }
+.beer-pic{
+  background-size:30px;
+  background-repeat:no-repeat;
+  background-position:center;
+}

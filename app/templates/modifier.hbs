@@ -1,0 +1,32 @@
+<div class="flex flex-wrap -mx-1 overflow-hidden">
+
+
+  <div class="my-1 px-1 w-1/2 overflow-hidden">
+  <h1>Modifers</h1>
+  <p>Modifiers are small reusable tools that attach bahviour to HTML elements using life cycle events.</p>
+  <p>See the <a href="https://github.com/emberjs/rfcs/blob/master/text/0373-Element-Modifier-Managers.md">RFC</a> for details</p>
+  <p><button {{fadeIn}} class="btn bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full">
+  My Modifier
+</button></p>
+<p>Modifiers have there own lifecycle hooks and you can pass arguments to them in the same way you would with a Helper.</p>
+<p>Right now they are a Low Level API that is part of the template syntax. We can create our own modifiers by adding a file to app/modifiers.</p>
+<p>There are addons for simplyfying modifiers which we can use before they arrive in Ember itself.</p>
+<p><a href="https://github.com/spencer516/ember-functional-modifiers" target="_blank">Ember Functional Modifiers</a></p>
+
+
+</div>
+
+
+    <div class="my-1 px-1 w-1/2 overflow-hidden">
+      {{#let (get-code-snippet "modifier.js" unindent = true) as |snippet|}}
+      <CodeBlock @language={{snippet.language}}>
+        {{snippet.source}}
+      </CodeBlock>
+    {{/let}}
+      <div class="hbs">
+    {{#let (get-code-snippet "modifier.hbs") as |snippet|}}
+      <pre class={{snippet.language}}>{{snippet.source}}</pre>
+    {{/let}}
+  </div>
+  </div>
+</div>
