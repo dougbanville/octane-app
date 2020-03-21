@@ -57,7 +57,8 @@ Beer component html
 ```handlebars
 <div>
   <div
-    class="beer-pic border-l-2 border-t border-b border-l border-gray-400  lg:border-gray-400 h-48 lg:h-auto lg:w-48 flex-none bg-cover rounded-t lg:rounded-t-none lg:rounded-l text-center overflow-hidden" title="Mmmmm beer">
+    class="beer-pic border-l-2 border-t border-b border-l border-gray-400  lg:border-gray-400 h-48 lg:h-auto lg:w-48 flex-none bg-cover rounded-t lg:rounded-t-none lg:rounded-l text-center overflow-hidden"
+    {{did-insert this.bgImage}} title="Mmmmm beer">
   </div>
   <div
     class="border-r border-b border-l border-gray-400 lg:border-l-0 lg:border-t lg:border-gray-400 bg-white rounded-b lg:rounded-b-none lg:rounded-r p-4 flex flex-col justify-between leading-normal">
@@ -67,9 +68,11 @@ Beer component html
       </p>
       <div class="text-gray-900 font-bold text-xl mb-2">{{@title}}</div>
       <p class="text-gray-700 text-base">{{@beer.tagline}}</p>
+      <LinkTo @route="beerDetail" @model={{@beer}}>
       <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded" type="button">
         Details
       </button>
+      </LinkTo>
     </div>
   </div>
 </div>
