@@ -1,7 +1,7 @@
 # Steps
 
 ## Container Component
-On the route beers.js make a container component called beer-container
+On the route index.js make a container component called beer-container
 
 ``` bash
 ember g component beer-container --gc
@@ -67,7 +67,7 @@ Beer component html
       </p>
       <div class="text-gray-900 font-bold text-xl mb-2">{{@title}}</div>
       <p class="text-gray-700 text-base">{{@beer.tagline}}</p>
-      <LinkTo @route="beers.beer" @model={{@beer}}>
+      <LinkTo @route="beer-detail" @model={{@beer}}>
       <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded" type="button">
         Details
       </button>
