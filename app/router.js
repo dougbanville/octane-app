@@ -7,12 +7,6 @@ export default class Router extends EmberRouter {
 }
 
 Router.map(function() {
-  this.route('glimmer-components', function() {
-    this.route('nested');
-  });
-  this.route('es6classes');
-  this.route('modifier');
-  this.route('angle-bracket');
   this.route('beerDetail', {
     path: '/:id'
   });
