@@ -4,9 +4,13 @@ import { action } from '@ember/object';
 
 export default class BeerContainerComponent extends Component {
 
-  //start with beers untracked to show confusion
   @tracked beers
   @tracked searchText
+
+  constructor(){
+    super(...arguments)
+    this.loadBeers()
+  }
 
   @action
   async loadBeers(){
